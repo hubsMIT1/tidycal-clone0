@@ -20,12 +20,12 @@ function App() {
          
           <Routes>
 
-            <Route path="/tidycal-clone0/login" element={<Login1 setAuthState={setAuthState} setUser={setUser}/>} />
+            <Route path="/login" element={<Login1 setAuthState={setAuthState} setUser={setUser}/>} />
           
             <Route element={<PrivateRoute isAuth={authState} />} >             
-              <Route path='/tidycal-clone0/dashboard/booking-types' element={<Home user={user} setAuthState={setAuthState} setUser={setUser}/>} /> 
+              <Route path='/dashboard/booking-types' element={<Home user={user} setAuthState={setAuthState} setUser={setUser}/>} /> 
             </Route>
-            <Route path="/*" element={<Navigate to="/tidycal-clone0/login" />} />
+            <Route path="/*" element={<Navigate to="/login" />} />
           </Routes>
         </BrowserRouter>
       </div>
