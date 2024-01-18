@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.h3 {
+  font-size: calc(1.3rem + .6vw);
+}
+.col{
+  flex: 1 0 0%;
+}
+
+.col-sm-6{
+  flex:0 0 auto;
+  width:50%;
+}
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    /* display: flex;
+    flex-wrap: wrap; */
+    margin-left: calc(var(--bs-gutter-x)*-.5);
+    margin-right: calc(var(--bs-gutter-x)*-.5);
+    margin-top: calc(var(--bs-gutter-y)*-1);
+}
+
+.btype-description-container {
+  height: 100px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  transition: height .2s ease-in-out;
+}
+
+.gradient-white-top:after, .gradient-white-top:before {
+  background-color: transparent;
+  background: transparent;
+  background: linear-gradient(180deg,hsla(0,0%,100%,0),#fff);
+  content: "";
+  display: block;
+  height: 1rem;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+.fw{
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.shadow {
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.bg-transition{
+  transition: '';
+}
+input:focus {
+  outline: none !important;
+  border:1px solid #9fbfee;
+  border-radius: 4px;
+  box-shadow: 0 0 0 4px #d1e5fa;
+}
+input[type="checkbox"]{
+  
+  /* -webkit-appearance: none;
+    appearance: none; */
+    border: 1px solid rgba(0,0,0,.25);
+    border-radius: 5px;
+    height: 1em;
+    margin-top: 0.25em;
+    vertical-align: top;
+    width: 1em;
+}
+/* .form-check input[type="checkbox"]:checked {
+  background-color: #007bff; 
+  border: 1px solid #007bff; 
+} */
+.form-check{
+  display: block;
+  margin-bottom: 0.125rem;
+  min-height: 1.5rem;
+  padding-left: 1.5em;
+}
+
+a{
+  color:#154cefed;
+  text-decoration: none;
+  line-height: 1;
+  font-weight: 450;
+  font-size: 15px;
+}
+
+
+
