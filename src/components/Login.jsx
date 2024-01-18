@@ -17,7 +17,7 @@ function Login({ setAuthState, setUser }) {
   const handleLogin = () => {
     setUser(email);
     setAuthState(true);
-    navigate('/dashboard/booking-types');
+    navigate('/tidycal/dashboard/booking-types');
 
   };
 

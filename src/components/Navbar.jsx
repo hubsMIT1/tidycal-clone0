@@ -68,7 +68,7 @@ const Navbar = () => {
             Home
           </a>
           <Link
-            to="/login"
+            to="/tidycal/login"
             className="lg:w-auto px-3 mx-2 text-sm text-black text-opacity-55  hover:text-opacity-70"
           >
             Login

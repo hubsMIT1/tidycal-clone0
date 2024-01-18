@@ -64,5 +64,5 @@ export default function Home({
 }
 
 Home.propTypes = {
-  user: PropTypes.object, 
+  user: PropTypes.string, 
 };

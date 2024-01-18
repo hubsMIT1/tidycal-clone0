@@ -3,6 +3,7 @@ import {
   BrowserRouter,
   Routes,
   Route,
+  Navigate
 } from "react-router-dom";
 
 import Login1 from './components/Login'
@@ -19,11 +20,12 @@ function App() {
          
           <Routes>
 
-            <Route path="/login" element={<Login1 setAuthState={setAuthState} setUser={setUser}/>} />
+            <Route path="/tidycal/login" element={<Login1 setAuthState={setAuthState} setUser={setUser}/>} />
           
             <Route element={<PrivateRoute isAuth={authState} />} >             
-              <Route path='/dashboard/booking-types' element={<Home user={user} setAuthState={setAuthState} setUser={setUser}/>} /> 
+              <Route path='/tidycal/dashboard/booking-types' element={<Home user={user} setAuthState={setAuthState} setUser={setUser}/>} /> 
             </Route>
+            <Route path="/*" element={<Navigate to="/tidycal/login" />} />
           </Routes>
         </BrowserRouter>
       </div>
