@@ -22,7 +22,7 @@ function App() {
 
             <Route path="/login" element={<Login1 setAuthState={setAuthState} setUser={setUser}/>} />
           
-            <Route element={<PrivateRoute isAuth={authState} />} >             
+            <Route element={<PrivateRoute isAuth={authState} user={user}/>} >             
               <Route path='/dashboard/booking-types' element={<Home user={user} setAuthState={setAuthState} setUser={setUser}/>} /> 
             </Route>
             <Route path="/*" element={<Navigate to="/login" />} />

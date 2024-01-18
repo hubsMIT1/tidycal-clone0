@@ -12,7 +12,7 @@ export default function Home({
       <div className="container lg:max-w-[81vw] mx-auto">
         <div className="w-full px-4 md:px-4">
           <div className="grid grid-cols-1 xl:grid-cols-9 items-center gap-3">
-            <h1 className="col-span-2 text-3xl font-bold mb-3">Booking types</h1>
+            <h1 className="col-span-2 text-2xl lg:text-3xl font-bold mb-3">Booking types</h1>
             <div className="col-span-7 ">
               <div className="flex justify-between flex-wrap ">
                 <button
@@ -52,11 +52,11 @@ export default function Home({
         </div>
         <div className="w-100 block md:mb-8 pb-3 sm:pb-2 xl:pb-6"></div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xxl-grid-cols-4 justify-start md:gap-x-4 lg:gap-x-6 xxl:gap-x-8 px-3 lg:px-4">
-          <MeetingsBox />
-          <MeetingsBox />
-          <MeetingsBox />
-          <MeetingsBox />
-          <MeetingsBox />
+          <MeetingsBox check={true} />
+          <MeetingsBox check={true}/>
+          <MeetingsBox check={false}/>
+          <MeetingsBox check={false} />
+          <MeetingsBox check={true} />
         </div>
       </div>
     </>

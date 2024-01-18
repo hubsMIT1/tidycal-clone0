@@ -1,7 +1,7 @@
 import { useState } from "react";
-
-export default function MeetingsBox() {
-  const [isChecked, setChecked] = useState(false);
+import PropTypes from "prop-types";
+export default function MeetingsBox({check}) {
+  const [isChecked, setChecked] = useState(check);
 
   const handleToggle = () => {
     setChecked(!isChecked);
@@ -234,4 +234,7 @@ export default function MeetingsBox() {
       </div>
     </div>
   );
+}
+MeetingsBox.propTypes = {
+    check:PropTypes.bool
 }
