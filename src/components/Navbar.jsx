@@ -68,7 +68,7 @@ const Navbar = () => {
             Home
           </a>
           <Link
-            to="/tidycal/login"
+            to="/tidycal-clone0/login"
             className="lg:w-auto px-3 mx-2 text-sm text-black text-opacity-55  hover:text-opacity-70"
           >
             Login
